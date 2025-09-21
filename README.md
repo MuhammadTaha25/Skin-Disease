@@ -1,46 +1,51 @@
-# 🍃 Potato Disease Classification  
-## Computer Vision Project  
+# 🩺 Skin Disease Classification using Deep Learning (CNN)
 
-### 📌 Project Title  
-**Potato Leaf Disease Classification using Deep Learning (CNN)**  
-
----
-
-### 📖 Overview  
-This project focuses on building an **AI-powered image classification model** to detect and categorize **potato leaf diseases**. Using **Convolutional Neural Networks (CNNs)**, the model learns to differentiate between **healthy and diseased potato leaves**, enabling early diagnosis and preventive measures for crop protection.  
+## 📌 Overview
+This project focuses on building a **deep learning model** to classify **skin diseases** from medical images. Using **Convolutional Neural Networks (CNNs)**, the model learns to differentiate between **healthy and diseased skin**, enabling early diagnosis and AI-powered healthcare support.
 
 ---
 
-### 🎯 Objectives  
-- Automate plant disease detection from leaf images  
-- Improve accuracy and reliability compared to manual inspection  
-- Provide scalable AI solutions for the agriculture sector  
+## 🎯 Objectives
+- Automate skin disease detection from medical images  
+- Improve diagnostic accuracy compared to manual inspection  
+- Provide scalable AI solutions for healthcare  
 
 ---
 
-### 🔑 Key Steps  
-#### 1. Data Preparation  
-- Collected and organized the **PlantVillage potato leaf dataset**  
-- Partitioned dataset into **training, validation, and testing sets**  
-- Applied preprocessing (**resizing, normalization, augmentation**)  
-
-#### 2. Model Development  
-- Designed a **CNN architecture** with multiple convolution and pooling layers  
-- Used **data augmentation** to improve generalization  
-- Implemented **Adam optimizer** and **SparseCategoricalCrossentropy loss**  
-
-#### 3. Training & Evaluation  
-- Trained the model over multiple epochs with batch optimization  
-- Evaluated performance on unseen test data  
-- Achieved high accuracy in distinguishing **healthy vs. diseased leaves**  
-
-#### 4. Results & Insights  
-- Visualization of **training/validation accuracy and loss curves**  
-- Test accuracy metrics showing strong model performance  
-- Saved trained model for deployment or integration into real-world systems  
+## 📂 Dataset
+- Publicly available **Skin Disease Image Dataset**  
+- Split into **Training, Validation, and Test sets**  
+- Preprocessing applied:
+  - Resizing images  
+  - Normalization  
+  - Data Augmentation (rotation, flip, zoom)  
 
 ---
 
-### 🌍 Impact  
-This project demonstrates how **deep learning can be applied to agriculture**, reducing dependency on manual inspection, minimizing crop loss, and enabling early disease detection.  
+## 🔑 Key Steps
+### 1. Data Preparation
+- Imported dataset and performed preprocessing  
+- Partitioned into train/validation/test  
 
+### 2. Model Development
+- Built a **CNN architecture** with multiple convolution + pooling layers  
+- Optimizer: **Adam**  
+- Loss: **SparseCategoricalCrossentropy**  
+- Used data augmentation to reduce overfitting  
+
+### 3. Training & Evaluation
+- Trained for multiple epochs with batch optimization  
+- Evaluated accuracy & loss on unseen test data  
+- Achieved **high accuracy in classifying skin diseases**  
+
+### 4. Results & Insights
+- Plotted **accuracy/loss curves**  
+- High **Test Accuracy** achieved  
+- Model saved for deployment and further integration  
+
+---
+
+## 📊 Results
+- **Training Accuracy**: 96.27%  
+- **Validation Accuracy**: 98.43%  
+- **Test Accuracy**: 96.88%  
